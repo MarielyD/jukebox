@@ -1,0 +1,143 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ html, body {
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+
+}
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*carousel styling*/
+#boutique{
+ display: none; /* Start invisible until the plugin is loaded */
+
+ position: absolute;
+ top: 4em;
+ margin-left:auto;
+ margin-right:auto;
+
+}
+
+/* The frames */
+ #boutique li{
+   background-color: white;
+   box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   -moz-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+   -o-box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    height: 360px;
+    width: 300px;
+    padding-top: 28px;
+    border-radius: 5px;
+    position: absolute;
+ }
+
+ /* The most frontal item */
+#boutique .front img{
+}
+
+#boutique .behind img{
+}
+
+#boutique img{
+}
+
+.boutique{
+   margin:0;
+   padding:0;
+   position:relative !important;
+   z-index:1;
+   left: -2%;
+ }
+.boutique li{
+  margin:0;
+  padding:0;
+  list-style:none;
+  position:absolute; z-index:1;
+  display:none;
+  border-width:0;
+  height: 360px;
+  width: 300px;
+}
+
+.boutique img{
+   border:0;
+   vertical-align:bottom;
+  }
+ .boutique span{
+   display:block;
+   position:absolute;
+   left:0;
+   right:0;
+   bottom:0;
+   text-align:left;
+   cursor:default;
+   margin:0;
+ }
+
+ .boutique h6{
+   display: none;
+  }
+ .boutique a, .boutique a:hover{
+   cursor:default;
+   text-decoration:none;
+   outline:none;
+  }
+ .boutique img, .boutique li, .boutique a{
+   -webkit-user-select:none;
+   -khtml-user-select:none;
+   -moz-user-select:none;
+   -o-user-select:none;
+   user-select:none;
+   -webkit-user-drag:none;
+   -moz-user-drag:none;
+   user-drag:none;
+ }
+
+.boutique.rtl span{
+   text-align:right;
+ }
+
+ .frame3 {
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 3px;
+  padding-bottom: 0;
+  background-color: #0085B2 !important;
+}
+.frame3 .song {
+   padding-top: 5px;
+   padding-left: 8px;
+   padding-right: 8px;
+   padding-bottom: 0;
+   color: white !important;
+   text-transform: uppercase;
+ }
+
+
+ .frame3 .artist {
+   padding-top: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-bottom: 0;
+   color: white !important;
+   text-transform: uppercase;
+ }

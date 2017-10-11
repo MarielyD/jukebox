@@ -1,0 +1,111 @@
+// Place all the styles related to the Songs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+//song display
+#playlist{
+  position: relative;
+  display: block;
+  margin-top: 200px;
+  width: 740px;
+  background-color: #f3f6f7;
+  -moz-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-left:250px;
+  margin-right:auto;
+  border-radius: 5px;
+  max-height: 240px;
+  overflow: scroll;
+}
+//table rows
+li {
+  height: 50px;
+  display: block;
+}
+
+.list-group-item{
+    background-color: #f3f6f7!important;
+}
+
+ .list-group-item:hover {
+  background-color: #0085b2 !important;
+  color: #fff !important;
+  #song-name {
+    color: white;
+  }
+  #song-label{
+    background-color: #90b9c9;
+  }
+}
+
+.table{
+  margin-bottom: 0px !important;
+  margin-top: 0px;
+  padding: 10px 15px;
+}
+
+//song order
+#number{
+  background-color: #90B9C9;
+  border-radius: 5%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  padding: 6px;
+}
+
+// star
+#star {
+  font-size: 26px;
+  color: #ddd;
+  margin-left: 15px;
+}
+
+// song name
+#song-name{
+  color: #0085b2;
+  font-size: 16px;
+  position: inherit;
+  text-transform: uppercase;
+  margin-left: 5px;
+  margin-right: 10px;
+  z-index: 1;
+  position: relative;
+  top: 6px;
+}
+//song label
+#song-label{
+  padding: 4px;
+  width: 60px;
+  padding-right: 12px;
+  padding-left: 12px;
+  background-color: #ddd;
+  border-radius: 3%;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 9px;
+  font-size: 12px;
+  letter-spacing: .5px;
+  top: 3px;
+
+}
+//song minutes
+#minutes{
+  text-align: right;
+  padding-right: 40px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+
+// clicked class for toggle
+.clicked {
+  color: #d9d900;
+}
+.col-lg-8 {
+    width: 70% !important;
+}

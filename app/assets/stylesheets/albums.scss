@@ -1,0 +1,94 @@
+/*// Place all the styles related to the Albums controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// album art display settings*/
+.album-body {
+  margin-top: 25px;
+  text-align: center;
+  position: relative;
+  display: inline;
+  max-width: 100%;
+
+}
+
+.row{
+  position: relative;
+  margin: auto;
+  float: center;
+}
+
+/*song name*/
+.song{
+  color: #0085B2;
+  font-size: 22px;
+  line-height: 26px;
+  padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
+/*artist name*/
+.artist{
+  font-size: 17px;
+  color: black;
+  text-transform: uppercase;
+  padding-top: 6px !important;
+}
+
+/*button */
+.btn-sq-sm {
+  width: 50px;
+  height: 50px;
+}
+
+.fa{
+  color: #ddd;
+}
+
+/*left button*/
+#left-button{
+  text-align: left;
+  margin-left: 40px;
+  position: absolute;
+  z-index: 1;
+  margin-top: 250px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  &:hover {
+    border-style: none;
+    background-color: #0085B2 ;
+    .fa-arrow-left {
+      color: white;
+    }
+  }
+  &:active, &:focus {
+   background: #00698C !important;
+   border-style:none;
+   .fa-arrow-left {
+     color: white !important;
+   }
+ }
+}
+
+/*right button*/
+#right-button{
+  float: right;
+  margin-right: -5px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  &:hover {
+   background-color: #0085B2;
+   .fa-arrow-right {
+     color: white;
+   }
+ }
+ &:active, &:focus {
+   background: #00698C !important;
+   .fa-arrow-right {
+     color: white !important;
+   }
+ }
+}

@@ -1,0 +1,28 @@
+<!-- left arrow -->
+<button type="button" href="#" class="btn btn-sq-sm btn-faded" id="left-button" onclick="boutique_prev(1)" >
+  <i class="fa fa-arrow-left fa-2x"></i>
+</button>
+
+<div class="album-body">
+
+  <ul id="boutique"></ul>
+
+  <!-- right arrow -->
+  <button type="button" href="#" class="btn btn-sq-sm btn-faded" id="right-button"  onclick="boutique_next(1)">
+    <i class="fa fa-arrow-right fa-2x"></i>
+  </button>
+</div>
+
+<!-- playlist -->
+<ul class="list-group" id="playlist"></ul>
+
+
+<script>
+
+    // New frontal frame focus callback:
+    function move_callback(anchor){
+      var frame3 = $(".frame3"),
+          id = frame3.data('id');
+      getSong(id);
+    }
+</script>
