@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 20171008142623) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "albums", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
@@ -28,7 +31,7 @@ ActiveRecord::Schema.define(version: 20171008142623) do
     t.string "song_name"
     t.integer "song_order"
     t.string "song_duration"
-    t.string "song_label"
+    t.string "song_label", array: true
     t.boolean "favorite"
   end
 
