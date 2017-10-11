@@ -5,11 +5,14 @@ an album should be auto-selected with the song list and it’s additional detail
 displayed below. Additional details included:
 
  ✦ Track number (incremental based on the way the songs are sorted)
+ 
  ✦ Option to mark as favorite
+ 
  ✦ Song Name
- ✦ Categorization
- ✦ Explicit
- ✦ Upbeat
+ 
+ ✦ Categorization (Explicit, Upbeat)
+ 
  ✦ Song duration
+ 
 • The user should then be able to scroll through the carousel both in the left and
 right directions. 
