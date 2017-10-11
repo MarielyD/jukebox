@@ -1,5 +1,5 @@
 $(document).ready(function(){
-  getSong(1);
+  getSong(3);
 
   $.ajax({
     url: "https://stg-resque.hakuapp.com/albums.json",
@@ -72,7 +72,7 @@ function getSong(albumId){
 
 }
 
-//populate song list 
+//populate song list
 function songFill(value){
   var songType = "";
   if (value.song_label === null) {
@@ -98,7 +98,7 @@ function songFill(value){
 
 }
 
-// Or with custom options:
+// carousel options:
 function carouselStart(){
   $('#boutique').boutique({
     container_width:	880,

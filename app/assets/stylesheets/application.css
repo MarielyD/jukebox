@@ -50,16 +50,6 @@
     position: absolute;
  }
 
- /* The most frontal item */
-#boutique .front img{
-}
-
-#boutique .behind img{
-}
-
-#boutique img{
-}
-
 .boutique{
    margin:0;
    padding:0;
