@@ -16,3 +16,5 @@ displayed below. Additional details included:
  
 • The user should then be able to scroll through the carousel both in the left and
 right directions. 
+
+View Jukebox here:   https://protected-thicket-96778.herokuapp.com/
