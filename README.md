@@ -1,24 +1,20 @@
-# README
+Digital Jukebox
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The purpose of the design is meant to simulate a digital jukebox. On landing,
+an album should be auto-selected with the song list and it’s additional details
+displayed below. Additional details included:
 
-Things you may want to cover:
+ ✦ Track number (incremental based on the way the songs are sorted)
+ 
+ ✦ Option to mark as favorite
+ 
+ ✦ Song Name
+ 
+ ✦ Categorization (Explicit, Upbeat)
+ 
+ ✦ Song duration
+ 
+• The user should then be able to scroll through the carousel both in the left and
+right directions. 
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+View Jukebox here:   https://protected-thicket-96778.herokuapp.com/
